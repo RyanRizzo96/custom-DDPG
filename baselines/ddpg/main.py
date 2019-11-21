@@ -6,6 +6,7 @@ import gym
 
 from baselines import logger, bench
 from baselines.common.misc_util import boolean_flag
+from baselines.ddpg.noise import AdaptiveParamNoiseSpec, OrnsteinUhlenbeckActionNoise,  NormalActionNoise
 
 
 def run(env_id, seed, noise_type, layer_norm, evaluation, **kwargs):
